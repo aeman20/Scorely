@@ -1,0 +1,291 @@
+/* General Setup and Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#b0c8f1; /* Light Blue Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #1e3a8a; /* Dark Blue for headings */
+}
+
+/* --- 1. Navigation Bar (Reusing previous structure) --- */
+.navbar {
+    background-color: #93c5fd; /* Primary Light Blue */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    border-bottom: 2px solid #1e3a8a; /* Dark Blue highlight */
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #1e3a8a; /* Dark Blue Primary Button */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0b226e;
+}
+
+/* --- 2. Hero Section - Contact Page Specific --- */
+.hero-contact-section {
+    padding: 80px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content-center {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-content-center h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content-center p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-illustration-placeholder i {
+    font-size: 3em;
+    color: #1c3989;
+    margin-bottom: 40px;
+}
+
+
+/* --- 3. Contact Details Cards --- */
+.contact-details-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-details-section .card-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-card i {
+    font-size: 2em;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contact-card p {
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- 4. Contact Form Section --- */
+.contact-form-section {
+    background-color: #e0f2fe; /* Lightest Blue Background */
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #93c5fd;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1e3a8a;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #93c5fd;
+    outline: none;
+}
+
+.send-message-button {
+    background-color: #1e3a8a; /* Primary Blue Button */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: auto;
+    margin-top: 10px;
+    display: block; /* Makes button span the width of the form container */
+}
+
+.send-message-button:hover {
+    background-color: #0b226e;
+}
+
+/* --- 5. Academic Note --- */
+.academic-note {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.academic-note p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --- 6. Footer --- */
+.contact-footer {
+    background-color: #1e3a8a; /* Dark Blue Footer */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.contact-footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+.contact-footer .footer-links a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-right {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .contact-details-section .card-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-card {
+        min-width: auto;
+    }
+    .contact-footer .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-content-center h1 {
+        font-size: 2.5em;
+    }
+    .hero-content-center p {
+        font-size: 1em;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="subject"] {
+        /* Makes Name/Email/Subject stack in a single column on smaller screens if you had them side-by-side */
+    }
+}

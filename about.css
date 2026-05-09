@@ -1,0 +1,301 @@
+/* General Setup and Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b0c8f1; /* Light Blue Background */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1e3a8a; /* Dark Blue for headings */
+}
+
+/* --- 1. Navigation Bar --- */
+.navbar {
+    background-color: #1A73E8; /* Primary Light Blue */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically aligns logo and nav-right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+/* NEW/MODIFIED CODE: To align navigation links and button on the right */
+.nav-right {
+    display: flex;
+    align-items: center; /* Vertically aligns nav links and button */
+    gap: 20px; /* Space between navigation block (nav) and Login button */
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Spacing between links */
+    font-size: 1.1em;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    border-bottom: 2px solid #1e3a8a; /* Dark Blue highlight */
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #1e3a8a; /* Dark Blue Primary Button */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0b226e;
+}
+
+/* --- 2. Hero Section --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    background: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.hero-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration-box {
+    background-color:#b0c8f1; /* Lighter Blue box for illustration */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #1e3a8a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.illustration-box i {
+    font-size: 3em;
+    margin: 10px;
+}
+
+/* --- 3. Info Sections (Cards, Objectives, How It Works) --- */
+.info-section {
+    padding: 60px 0;
+}
+
+.info-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* Card Grid for "Who Is This System For?" */
+.card-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 250px;
+}
+
+.card i {
+    font-size: 2.5em;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* Objectives List Style */
+.objectives ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.objectives li {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+}
+
+.objectives li i {
+    color: #1e3a8a;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+/* How It Works Flow */
+.how-it-works {
+    background-color: #e0f2fe; /* Lightest Blue Background */
+    border-radius: 15px;
+    margin: 40px auto;
+    padding: 60px 20px;
+}
+
+.step-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 250px;
+}
+
+.step i {
+    font-size: 2em;
+    color: #0d9488; /* A different color for process flow */
+    margin-bottom: 10px;
+}
+
+.arrow i {
+    font-size: 1.5em;
+    color: #1e3a8a;
+}
+
+/* --- 4. Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    /* Updated navigation alignment for smaller screens */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .navbar nav a {
+        margin: 0 8px;
+    }
+    
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step-flow {
+        flex-wrap: wrap;
+    }
+
+    .arrow {
+        display: none; /* Hide arrows on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
